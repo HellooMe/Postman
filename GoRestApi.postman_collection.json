@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "23c3d627-ed60-43fb-bfb9-a2fbf14d651b",
+		"name": "mock",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27876595",
+		"_collection_link": "https://solar-trinity-790670.postman.co/workspace/Hamza~307687ae-1902-4204-a164-3f970b529d41/collection/27876595-23c3d627-ed60-43fb-bfb9-a2fbf14d651b?action=share&creator=27876595&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "ping",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/ping",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"ping"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/ping",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"ping"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\"status\" : \"pong\"}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://46b633a5-b502-4087-9fdc-a443e73c2f77.mock.pstmn.io"
+		}
+	]
+}
